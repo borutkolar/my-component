@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link"
 import clsx from "clsx";
 // import { BackgroundExtension } from "../BackgroundExtension";
 import { Container, LogoWrapper, AdditionalText } from "./style";
@@ -24,16 +25,18 @@ export function Header({
   const chevronIcon = additionalTextExpanded ? (
     <FaChevronUp onClick={() => setAdditionalTextExpanded(false)} />
   ) : (
-    <FaChevronDown onClick={() => setAdditionalTextExpanded(true)} />
-  );
+      <FaChevronDown onClick={() => setAdditionalTextExpanded(true)} />
+    );
   const chevron = additionalTextDescription ? chevronIcon : null;
 
   return (
     <Container backgroundColor={backgroundColor}>
       <LogoWrapper backgroundImage={shopBackgroundImage}>
-        <a>
-          <img src="logo.svg"/>
-        </a>
+        <Link href="/">
+          <a>
+            <img src="logo.svg" />
+          </a>
+        </Link>
         <img src="shopping-cart.svg" />
       </LogoWrapper>
       {additionalTextTitle && (
