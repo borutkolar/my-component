@@ -1,5 +1,6 @@
 {
-  "name": "my-component",
+  "name": "@borutkolar/my-component",
+  "repository": "git://github.com/borutkolar/my-component.git",
   "version": "0.0.1",
   "files": [
     "lib"
