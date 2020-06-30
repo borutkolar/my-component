@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"outDir": "./lib",
-		"module": "CommonJS",
+		"module": "ESNext",
 		"target": "es6",
 		"lib": [
 			"es5",
@@ -33,8 +33,6 @@
 		"build",
 		"scripts",
 		"acceptance-tests",
-		"webpack",
-		"jest",
-		"src/setupTests.ts"
+		"webpack"
 	]
 }
